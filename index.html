@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuanysh Karakuzov - Fullstack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" aria-label="Toggle theme" tabindex="0">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Section Progress Indicator -->
+    <div class="section-progress" role="navigation" aria-label="Section navigation">
+        <div class="progress-dot" data-section="Home" data-target="home" role="button" tabindex="0"></div>
+        <div class="progress-dot" data-section="About" data-target="about" role="button" tabindex="0"></div>
+        <div class="progress-dot" data-section="Experience" data-target="experience" role="button" tabindex="0"></div>
+        <div class="progress-dot" data-section="Skills" data-target="skills" role="button" tabindex="0"></div>
+        <div class="progress-dot" data-section="Projects" data-target="projects" role="button" tabindex="0"></div>
+        <div class="progress-dot" data-section="Contact" data-target="contact" role="button" tabindex="0"></div>
+    </div>
+
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" role="banner">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-greeting">Hi, I'm <span class="highlight">Kuanysh</span> <span
+                            class="lightning-emoji"><i class="fas fa-bolt"></i></span></h1>
+                    <div class="hero-title">
+                        <span class="typing-text" id="typed-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Passionate Fullstack Developer with 4+ years of experience creating
+                        scalable web applications using modern technologies. I love turning
+                        complex problems into simple, beautiful solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i>
+                            Get In Touch
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <i class="fas fa-code"></i>
+                            View My Work
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-icon" style="--delay: 0s">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <div class="floating-icon" style="--delay: 1s">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="floating-icon" style="--delay: 2s">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="floating-icon" style="--delay: 3s">
+                                <i class="fab fa-golang"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section" role="main">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a dedicated Fullstack Developer based in Kazakhstan with a passion for
+                        creating innovative digital solutions. My journey in software development
+                        spans over 4 years, during which I've honed my skills across various
+                        technologies and frameworks.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-code highlight-icon"></i>
+                            <div>
+                                <h4>Clean Code Advocate</h4>
+                                <p>Writing maintainable, scalable, and efficient code</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-lightbulb highlight-icon" style="animation-delay: 0.5s;"></i>
+                            <div>
+                                <h4>Problem Solver</h4>
+                                <p>Turning complex challenges into elegant solutions</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-users highlight-icon" style="animation-delay: 1s;"></i>
+                            <div>
+                                <h4>Team Player</h4>
+                                <p>Collaborating effectively in agile environments</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="4">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="50">0</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="15">0</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content" data-modal-trigger="experience-1">
+                        <div class="timeline-header">
+                            <h3>Senior Fullstack Developer <i class="fas fa-search expand-icon"></i></h3>
+                            <span class="company">EL Umiti | Astana</span>
+                            <span class="period">03/2024 - Present</span>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Leading the development of corporate web applications and AI solutions.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">OpenAI API</span>
+                            </div>
+                            <button class="details-btn">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content" data-modal-trigger="experience-2">
+                        <div class="timeline-header">
+                            <h3>Fullstack Developer <i class="fas fa-search expand-icon"></i></h3>
+                            <span class="company">AITU | Astana</span>
+                            <span class="period">01/2023 - 03/2024</span>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Development and maintenance of critical educational technology systems.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">.NET Core</span>
+                                <span class="tech-tag">SQL Server</span>
+                            </div>
+                            <button class="details-btn">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content" data-modal-trigger="experience-3">
+                        <div class="timeline-header">
+                            <h3>Junior Fullstack Developer <i class="fas fa-search expand-icon"></i></h3>
+                            <span class="company">TechStart Solutions | Astana</span>
+                            <span class="period">06/2021 - 12/2022</span>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Started professional journey in web application development.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">MySQL</span>
+                            </div>
+                            <button class="details-btn">Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up">
+                    <div class="skill-image">
+                        <i class="fas fa-laptop-code skill-icon"></i>
+                    </div>
+                    <div class="skill-content">
+                        <h3>Frontend</h3>
+                        <p>Modern frontend development with React, TypeScript, and responsive design principles.</p>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">React</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">TypeScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">HTML/CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                 
+                  
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-image">
+                        <i class="fas fa-server skill-icon"></i>
+                    </div>
+                    <div class="skill-content">
+                        <h3>Backend</h3>
+                        <p>Robust backend development with Python, Golang, C#, and Node.js for scalable applications.</p>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Golang</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">C#</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Node.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                     
+                  
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-image">
+                        <i class="fas fa-database skill-icon"></i>
+                    </div>
+                    <div class="skill-content">
+                        <h3>Database</h3>
+                        <p>Database design and management with PostgreSQL, MongoDB, Redis, and SQL Server.</p>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">PostgreSQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">MongoDB</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Redis</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">SQL Server</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+              
+                   
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="600">
+                    <div class="skill-image">
+                        <i class="fas fa-tools skill-icon"></i>
+                    </div>
+                    <div class="skill-content">
+                        <h3>Tools & Others</h3>
+                        <p>Development tools, cloud services, and additional skills for modern software development.</p>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Docker</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">AWS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Git</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">English</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+               
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <i class="fas fa-robot project-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI-Powered Web Service</h3>
+                        <p>Developed a comprehensive web service integrating OpenAI API for intelligent content
+                            generation and analysis.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Python</span>
+                            <span>OpenAI API</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/KukaAbob/ai-web-service" target="_blank" class="project-link"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <i class="fas fa-calendar-check project-icon" style="animation-delay: 0.2s;"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Smart Attendance System</h3>
+                        <p>Built a comprehensive attendance management system with real-time tracking, analytics, and
+                            automated reporting.</p>
+                        <div class="project-tech">
+                            <span>C#</span>
+                            <span>.NET Core</span>
+                            <span>React</span>
+                            <span>SQL Server</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/KukaAbob/attendance-system" target="_blank" class="project-link"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <i class="fas fa-chart-line project-icon" style="animation-delay: 0.4s;"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Analytics Dashboard</h3>
+                        <p>Created a real-time analytics dashboard with interactive charts and data visualization for
+                            business intelligence.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>Golang</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/KukaAbob/analytics-dashboard" target="_blank"
+                                class="project-link" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <i class="fas fa-shopping-cart project-icon" style="animation-delay: 0.6s;"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-stack e-commerce solution with payment integration, inventory management, and admin
+                            dashboard.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/KukaAbob/ecommerce-platform" target="_blank"
+                                class="project-link" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or
+                        just want to say hi, feel free to reach out!</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:kukakarakuzov@gmail.com">kukakarakuzov@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+77058600322">+7 705 860 0322</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <span>Astana, Kazakhstan</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/KukaAbob/" target="_blank" aria-label="GitHub Profile">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/kuanysh-karakuzov" target="_blank"
+                            aria-label="LinkedIn Profile">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/kukakarakuzov" target="_blank" aria-label="Twitter Profile">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:kukakarakuzov@gmail.com" aria-label="Send Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" data-aos="fade-left" role="form" aria-label="Contact form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Kuanysh Karakuzov. All rights reserved.</p>
+                <p>Built with <i class="fas fa-heart"></i> using HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Experience Modals -->
+    <div id="experience-1" class="modal-overlay" role="dialog" aria-hidden="true" aria-labelledby="exp-1-title">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="exp-1-title">Senior Fullstack Developer</h2>
+                <button class="modal-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-company">EL Umiti | Astana</div>
+                <div class="modal-period">03/2024 - Present</div>
+                <p>Leading the development of corporate web applications and AI solutions.</p>
+                <ul>
+                    <li>Architecture and development of web services with OpenAI API integration</li>
+                    <li>Building scalable microservice architecture using Go and Python</li>
+                    <li>Implementation of real-time data processing systems</li>
+                    <li>Mentoring junior developers and conducting code reviews</li>
+                </ul>
+                <div class="modal-tech-stack">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">OpenAI API</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="experience-2" class="modal-overlay" role="dialog" aria-hidden="true" aria-labelledby="exp-2-title">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="exp-2-title">Fullstack Developer</h2>
+                <button class="modal-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-company">AITU | Astana</div>
+                <div class="modal-period">01/2023 - 03/2024</div>
+                <p>Development and maintenance of critical educational technology systems.</p>
+                <ul>
+                    <li>Creating a comprehensive attendance management system</li>
+                    <li>Development of a student portal with real-time notifications</li>
+                    <li>Implementation of automated reporting and analytics dashboard</li>
+                    <li>Technical support and system maintenance</li>
+                </ul>
+                <div class="modal-tech-stack">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">.NET Core</span>
+                    <span class="tech-tag">SQL Server</span>
+                    <span class="tech-tag">Azure</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="experience-3" class="modal-overlay" role="dialog" aria-hidden="true" aria-labelledby="exp-3-title">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="exp-3-title">Junior Fullstack Developer</h2>
+                <button class="modal-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-company">TechStart Solutions | Astana</div>
+                <div class="modal-period">06/2021 - 12/2022</div>
+                <p>Started professional journey in web application development and learning industry best practices.</p>
+                <ul>
+                    <li>Development of responsive web applications using modern frameworks</li>
+                    <li>Collaborating with senior developers on complex projects</li>
+                    <li>Participation in agile development processes</li>
+                    <li>Involvement in code reviews and documentation</li>
+                </ul>
+                <div class="modal-tech-stack">
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Django</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Git</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
